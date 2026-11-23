@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #fff8ef;
+    color: #333;
+}
+
+header {
+    background: #a83220;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-weight: bold;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #ffb347, #ffcc80);
+}
+
+.hero h2 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #a83220;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+section {
+    padding: 45px 7%;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #a83220;
+}
+
+.menu-container {
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.menu-card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 3px 10px #ddd;
+}
+
+.menu-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.menu-card h3 {
+    margin: 12px;
+}
+
+.menu-card p {
+    color: #a83220;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+button {
+    background: #a83220;
+    color: white;
+    border: none;
+    padding: 11px 18px;
+    border-radius: 7px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+button:hover {
+    background: #e65c40;
+}
+
+#pesanan {
+    background: #ffedda;
+    text-align: center;
+}
+
+#keranjang {
+    max-width: 500px;
+    margin: auto;
+}
+
+#keranjang p {
+    padding: 10px;
+}
+
+#nama, #alamat {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    margin: 12px auto;
+    padding: 13px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+}
+
+footer {
+    background: #a83220;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 5px;
+    }
+
+    .hero h2 {
+        font-size: 26px;
+    }
+}
